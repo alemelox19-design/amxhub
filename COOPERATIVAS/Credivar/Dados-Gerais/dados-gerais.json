@@ -1,0 +1,19 @@
+{
+  "id": "credivar",
+  "nome": "Sicoob Credivar",
+  "sistema": "Crediminas",
+  "produtos": [
+    "Central 2.0"
+  ],
+  "dataInicio": "",
+  "evolucao": 75,
+  "status": "Ativo",
+  "presidente": "",
+  "diretor": "Mateus ",
+  "gestor": "Andrielly",
+  "rh": "",
+  "ti": "",
+  "marketing": "",
+  "observacoes": "",
+  "agentKey": "Credivar"
+}

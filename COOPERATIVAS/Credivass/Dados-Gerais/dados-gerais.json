@@ -1,0 +1,19 @@
+{
+  "id": "credivass",
+  "nome": "Sicoob Credivass",
+  "sistema": "Crediminas",
+  "produtos": [
+    "Central 2.0"
+  ],
+  "dataInicio": "2026-05-01",
+  "evolucao": 20,
+  "status": "Em implantação",
+  "presidente": "",
+  "diretor": "Rodolfo ",
+  "gestor": "Thais ",
+  "rh": "",
+  "ti": "",
+  "marketing": "",
+  "observacoes": "",
+  "agentKey": "Credivass"
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "id": "timeline-1781491165403",
+    "agentKey": "Uniao-Central",
+    "cooperativaNome": "Sicoob União Central",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T02:39:25.403Z"
+  },
+  {
+    "id": "timeline-1781491253365",
+    "agentKey": "Uniao-Central",
+    "cooperativaNome": "Sicoob União Central",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T02:40:53.365Z"
+  },
+  {
+    "id": "timeline-1781491341488",
+    "agentKey": "Uniao-Central",
+    "cooperativaNome": "Sicoob União Central",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T02:42:21.488Z"
+  },
+  {
+    "id": "timeline-1781491402135",
+    "agentKey": "Uniao-Central",
+    "cooperativaNome": "Sicoob União Central",
+    "tipo": "Nota",
+    "titulo": "teste",
+    "descricao": "Ata",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T02:43:22.135Z"
+  },
+  {
+    "id": "timeline-1781491412059",
+    "agentKey": "Uniao-Central",
+    "cooperativaNome": "Sicoob União Central",
+    "tipo": "Geração solicitada",
+    "titulo": "Ata",
+    "descricao": "Documento solicitado a partir de nota.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T02:43:32.059Z"
+  },
+  {
+    "id": "import-chatgpt-credifor-20260615",
+    "agentKey": "Credifor",
+    "cooperativaNome": "Sicoob Credifor",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Cadastro, contexto estratégico e referência da conversa importados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:00.000Z"
+  },
+  {
+    "id": "import-chatgpt-credicope-20260615",
+    "agentKey": "Credicope",
+    "cooperativaNome": "Sicoob Credicope",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Contexto estratégico e referência da conversa importados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:01.000Z"
+  },
+  {
+    "id": "import-chatgpt-credifiemg-20260615",
+    "agentKey": "Credifiemg",
+    "cooperativaNome": "Sicoob Credifiemg",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Contexto estratégico e referência da conversa importados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:02.000Z"
+  },
+  {
+    "id": "import-chatgpt-credinova-20260615",
+    "agentKey": "Credinova",
+    "cooperativaNome": "Sicoob Credinova",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Contexto estratégico e referência da conversa importados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:03.000Z"
+  },
+  {
+    "id": "import-chatgpt-credivass-20260615",
+    "agentKey": "Credivass",
+    "cooperativaNome": "Sicoob Credivass",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Contexto estratégico e referência da conversa importados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:04.000Z"
+  },
+  {
+    "id": "import-chatgpt-credivar-20260615",
+    "agentKey": "Credivar",
+    "cooperativaNome": "Sicoob Credivar",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Contexto estratégico e referência da conversa importados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:05.000Z"
+  },
+  {
+    "id": "import-chatgpt-uniao-central-20260615",
+    "agentKey": "Uniao-Central",
+    "cooperativaNome": "Sicoob União Central",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Contexto estratégico e referência da conversa importados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:06.000Z"
+  },
+  {
+    "id": "import-chatgpt-uniao-centro-oeste-20260615",
+    "agentKey": "Uniao-Centro-Oeste",
+    "cooperativaNome": "Sicoob União Centro Oeste",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Contexto estratégico e referência da conversa importados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:07.000Z"
+  },
+  {
+    "id": "import-chatgpt-crediesmeraldas-20260615",
+    "agentKey": "Crediesmeraldas",
+    "cooperativaNome": "Sicoob Crediesmeraldas",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Contexto estratégico e referência da conversa importados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:08.000Z"
+  },
+  {
+    "id": "import-chatgpt-credicapi-20260615",
+    "agentKey": "Credicapi",
+    "cooperativaNome": "Sicoob Credicapi",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Contexto estratégico e referência da conversa importados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:09.000Z"
+  },
+  {
+    "id": "import-chatgpt-crediplus-20260615",
+    "agentKey": "Crediplus",
+    "cooperativaNome": "Sicoob Crediplus",
+    "tipo": "Importação",
+    "titulo": "Memória importada do projeto ANALISTA AMX",
+    "descricao": "Chat denominado Credplus vinculado ao cadastro Crediplus, sem duplicação.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:30:10.000Z"
+  },
+  {
+    "id": "timeline-1781527269815",
+    "agentKey": "Uniao-Central",
+    "cooperativaNome": "Sicoob União Central",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:41:09.815Z"
+  },
+  {
+    "id": "timeline-1781527830215",
+    "agentKey": "Credinova",
+    "cooperativaNome": "Sicoob Credinova",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:50:30.215Z"
+  },
+  {
+    "id": "timeline-1781527848518",
+    "agentKey": "Credinova",
+    "cooperativaNome": "Sicoob Credinova",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T12:50:48.518Z"
+  },
+  {
+    "id": "timeline-1781528738287",
+    "agentKey": "Credivar",
+    "cooperativaNome": "Sicoob Credivar",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T13:05:38.287Z"
+  },
+  {
+    "id": "timeline-1781529526580",
+    "agentKey": "Credivass",
+    "cooperativaNome": "Sicoob Credivass",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T13:18:46.580Z"
+  },
+  {
+    "id": "timeline-1781530808487",
+    "agentKey": "Crediesmeraldas",
+    "cooperativaNome": "Sicoob Crediesmeraldas",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T13:40:08.487Z"
+  },
+  {
+    "id": "timeline-1781530818792",
+    "agentKey": "Crediesmeraldas",
+    "cooperativaNome": "Sicoob Crediesmeraldas",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T13:40:18.792Z"
+  },
+  {
+    "id": "timeline-1781530846091",
+    "agentKey": "Crediplus",
+    "cooperativaNome": "Sicoob Crediplus",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T13:40:46.091Z"
+  },
+  {
+    "id": "timeline-1781531405563",
+    "agentKey": "Credicope",
+    "cooperativaNome": "Sicoob Credicope",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T13:50:05.563Z"
+  },
+  {
+    "id": "timeline-1781532502993",
+    "agentKey": "Credifiemg",
+    "cooperativaNome": "Sicoob Credifiemg",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T14:08:22.993Z"
+  },
+  {
+    "id": "timeline-1781532609394",
+    "agentKey": "Credifor",
+    "cooperativaNome": "Sicoob Credifor",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T14:10:09.394Z"
+  },
+  {
+    "id": "timeline-1781532621924",
+    "agentKey": "Uniao-Centro-Oeste",
+    "cooperativaNome": "Sicoob União Centro Oeste",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T14:10:21.924Z"
+  },
+  {
+    "id": "timeline-1781532637056",
+    "agentKey": "Credicapi",
+    "cooperativaNome": "Sicoob Credicapi",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T14:10:37.056Z"
+  },
+  {
+    "id": "timeline-1781532647233",
+    "agentKey": "Credicope",
+    "cooperativaNome": "Sicoob Credicope",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T14:10:47.233Z"
+  },
+  {
+    "id": "timeline-1781532663259",
+    "agentKey": "Saron",
+    "cooperativaNome": "Sicoob Saron",
+    "tipo": "Cooperativa",
+    "titulo": "Cadastro editado",
+    "descricao": "Dados atualizados.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T14:11:03.259Z"
+  },
+  {
+    "id": "timeline-1781533558562",
+    "agentKey": "Credifiemg",
+    "cooperativaNome": "Sicoob Credifiemg",
+    "tipo": "Nota",
+    "titulo": "Treinamento Gerente Consultivo ",
+    "descricao": "Relatório futuro",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T14:25:58.562Z"
+  },
+  {
+    "id": "timeline-1781533570932",
+    "agentKey": "Credifiemg",
+    "cooperativaNome": "Sicoob Credifiemg",
+    "tipo": "Geração solicitada",
+    "titulo": "E-mail",
+    "descricao": "Documento solicitado a partir de nota.",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T14:26:10.932Z"
+  },
+  {
+    "id": "timeline-1781533605766",
+    "agentKey": "Credifiemg",
+    "cooperativaNome": "Sicoob Credifiemg",
+    "tipo": "Nota atualizada",
+    "titulo": "Sicoob Credifiemg - Treinamento GC",
+    "descricao": "Relatório futuro",
+    "data": "2026-06-15",
+    "createdAt": "2026-06-15T14:26:45.766Z"
+  }
+]

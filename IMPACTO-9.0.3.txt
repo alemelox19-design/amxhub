@@ -1,0 +1,71 @@
+AMX HUB 9.0.3 STABLE - REGISTRO DE IMPACTO
+
+Escopo
+- Estabilização incremental da versão 9.0.2.
+- Arquitetura, layout estrutural, APIs e fluxo OpenAI preservados.
+- Nenhum módulo funcional novo foi criado.
+
+Dados
+- Mantidos os dados existentes de cooperativas, notas, DNA, pendências e timeline.
+- Sicoob Credifiemg adicionada à base oficial.
+- Sicoob União Central corrigida para o produto oficial Central 1.0.
+- Dashboard passou inicialmente a refletir 11 cooperativas: 7 Crediminas e
+  4 Cecremg. Após a importação ANALISTA AMX, passou para 12 cooperativas:
+  8 Crediminas e 4 Cecremg.
+
+Persistência e contexto
+- Notas editadas ou excluídas agora sincronizam o arquivo Markdown local.
+- Timeline automática registra criação, edição e exclusão de notas.
+- Assistente automático e Agente Geral recebem cooperativas, DNA, pendências,
+  timeline e notas antes da geração.
+- Backup ignora pastas opcionais ausentes e inclui uploads.
+
+Compatibilidade
+- Estruturas JSON existentes foram mantidas.
+- Rotas e campos existentes foram preservados.
+- O arquivo .env local não foi alterado.
+
+Risco residual conhecido
+- npm audit reporta vulnerabilidade alta no pacote xlsx 0.18.5.
+- O registro npm não oferece correção automática para essa dependência.
+- O suporte a planilhas foi preservado para não remover funcionalidade validada.
+
+Importação do projeto ANALISTA AMX - 15/06/2026
+- 11 conversas de cooperativas foram inventariadas.
+- Sicoob Credifor foi adicionada como novo cadastro.
+- O chat Credplus foi vinculado ao cadastro Sicoob Crediplus.
+- Sicoob Saron foi preservada.
+- Memórias estruturadas e referências das conversas foram adicionadas sem
+  substituir os dados locais existentes.
+
+Workspace integrado - 15/06/2026
+- Bureau Coop adicionado à aba Workspace.
+- O site abre dentro de uma moldura visual do AMX HUB, sem nova aba.
+- Agenda, Gmail e Drive foram preservados no formato anterior.
+
+Preparacao para hospedagem online - 16/06/2026
+- Adicionada autenticacao leve por sessao, ativada por AMX_AUTH_ENABLED=true
+  ou automaticamente em NODE_ENV=production.
+- Em modo local sem AMX_AUTH_ENABLED, o acesso continua direto como antes.
+- A OPENAI_API_KEY permanece somente no servidor e nao e exposta ao navegador.
+- Adicionado AMX_DATA_DIR para manter data, COOPERATIVAS, knowledge, logs,
+  config e uploads em pasta persistente na hospedagem.
+- Quando AMX_DATA_DIR aponta para uma pasta vazia, os dados atuais sao copiados
+  na primeira inicializacao para preservar compatibilidade.
+- Backup passou a gerar arquivo baixavel pela area Admin e funciona em Windows
+  ou Linux.
+- Rotas e campos existentes foram preservados.
+
+Deploy Oracle Cloud - 16/06/2026
+- Adicionada pasta deploy/oracle com arquivos de publicacao para VPS Ubuntu.
+- Incluidos exemplo de .env de producao, servico systemd, configuracao Nginx
+  e roteiro de instalacao.
+- Nenhuma rota, regra do Assistente AMX ou estrutura de dados foi alterada por
+  estes arquivos de deploy.
+
+Deploy Render Free - 16/06/2026
+- Adicionados render.yaml, .gitignore e pasta deploy/render.
+- Configuracao preparada para Web Service Node no plano gratuito.
+- Variaveis sensiveis ficam marcadas para configuracao manual no Render.
+- Uso recomendado como piloto online, com backups frequentes por nao haver
+  garantia de persistencia definitiva no plano gratuito.

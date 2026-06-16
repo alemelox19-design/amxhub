@@ -1,0 +1,19 @@
+{
+  "id": "credifor",
+  "nome": "Sicoob Credifor",
+  "sistema": "Crediminas",
+  "produtos": [
+    "Central 2.0"
+  ],
+  "dataInicio": "2026-05-01",
+  "evolucao": 58,
+  "status": "Em implantação",
+  "presidente": "",
+  "diretor": "Felipe",
+  "gestor": "Meyre",
+  "rh": "",
+  "ti": "",
+  "marketing": "",
+  "observacoes": "Importada do projeto ChatGPT ANALISTA AMX em 15/06/2026.",
+  "agentKey": "Credifor"
+}

@@ -1,0 +1,8 @@
+ANALISTA SICOOB CREDIFOR — BASE AMX
+
+Sistema: Crediminas
+Produto(s): Central 2.0
+Status: Em implantação
+
+Observações:
+Importada do projeto ChatGPT ANALISTA AMX em 15/06/2026.

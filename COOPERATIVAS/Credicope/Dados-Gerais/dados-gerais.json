@@ -1,0 +1,19 @@
+{
+  "id": "credicope",
+  "nome": "Sicoob Credicope",
+  "sistema": "Crediminas",
+  "produtos": [
+    "Central 2.0"
+  ],
+  "dataInicio": "2026-05-01",
+  "evolucao": 30,
+  "status": "Em implantação",
+  "presidente": "",
+  "diretor": "",
+  "gestor": "Claudio",
+  "rh": "Loren",
+  "ti": "",
+  "marketing": "",
+  "observacoes": "",
+  "agentKey": "Credicope"
+}

@@ -1,0 +1,9 @@
+node_modules/
+.env
+.amx-server.pid
+.amx-server-out.log
+.amx-server-err.log
+BACKUPS/
+AMX-HUB-*.zip
+npm-debug.log*
+.DS_Store

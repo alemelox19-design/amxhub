@@ -1,0 +1,19 @@
+{
+  "id": "credifiemg",
+  "nome": "Sicoob Credifiemg",
+  "sistema": "Crediminas",
+  "produtos": [
+    "Digital Coop"
+  ],
+  "dataInicio": "2026-05-01",
+  "evolucao": 40,
+  "status": "Em implantação",
+  "presidente": "",
+  "diretor": "Marcio ",
+  "gestor": "Michele",
+  "rh": "",
+  "ti": "",
+  "marketing": "",
+  "observacoes": "",
+  "agentKey": "Credifiemg"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "crediplus",
+  "nome": "Sicoob Crediplus",
+  "sistema": "Crediminas",
+  "produtos": [
+    "Central 1.0"
+  ],
+  "dataInicio": "",
+  "evolucao": 100,
+  "status": "Concluído",
+  "presidente": "",
+  "diretor": "Nathan",
+  "gestor": "Everton ",
+  "rh": "",
+  "ti": "",
+  "marketing": "",
+  "observacoes": "",
+  "agentKey": "Crediplus"
+}

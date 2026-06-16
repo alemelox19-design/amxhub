@@ -1,0 +1,19 @@
+{
+  "id": "credicapi",
+  "nome": "Sicoob Credicapi",
+  "sistema": "Cecremg",
+  "produtos": [
+    "Digital Coop"
+  ],
+  "dataInicio": "",
+  "evolucao": 0,
+  "status": "Atenção",
+  "presidente": "",
+  "diretor": "",
+  "gestor": "",
+  "rh": "",
+  "ti": "",
+  "marketing": "",
+  "observacoes": "",
+  "agentKey": "Credicapi"
+}

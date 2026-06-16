@@ -1,0 +1,19 @@
+{
+  "id": "uniao-central",
+  "nome": "Sicoob União Central",
+  "sistema": "Crediminas",
+  "produtos": [
+    "Central 1.0"
+  ],
+  "dataInicio": "2025-10-01",
+  "evolucao": 80,
+  "status": "Ativo",
+  "presidente": "",
+  "diretor": "Edson ",
+  "gestor": "Marcelo ",
+  "rh": "",
+  "ti": "",
+  "marketing": "",
+  "observacoes": "",
+  "agentKey": "Uniao-Central"
+}

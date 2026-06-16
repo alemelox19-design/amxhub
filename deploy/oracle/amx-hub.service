@@ -1,0 +1,15 @@
+[Unit]
+Description=AMX HUB 9.0.3 Stable
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/amx-hub
+EnvironmentFile=/opt/amx-hub/.env
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

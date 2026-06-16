@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: amx-hub-9-0-3-stable
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4.1
+      - key: AMX_AUTH_ENABLED
+        value: true
+      - key: AMX_ADMIN_USER
+        sync: false
+      - key: AMX_ADMIN_PASSWORD
+        sync: false
+      - key: AMX_SESSION_SECRET
+        sync: false
+      - key: AMX_SESSION_HOURS
+        value: 12
+      - key: AMX_COOKIE_SECURE
+        value: true

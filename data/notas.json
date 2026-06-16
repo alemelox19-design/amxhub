@@ -1,0 +1,25 @@
+[
+  {
+    "id": "nota-1781491402129",
+    "agentKey": "Uniao-Central",
+    "cooperativaNome": "Sicoob União Central",
+    "titulo": "teste",
+    "dataInteracao": "2026-06-15",
+    "destino": "Ata",
+    "anotacao": "hbbjhhhhhhhhhhhhhhhhhh hijjjjjjjjjjjjjjjjj iohhhhhhhhhhhhhhhhhhh",
+    "arquivos": [],
+    "createdAt": "2026-06-15T02:43:22.129Z"
+  },
+  {
+    "id": "nota-1781533558559",
+    "agentKey": "Credifiemg",
+    "cooperativaNome": "Sicoob Credifiemg",
+    "titulo": "Sicoob Credifiemg - Treinamento GC",
+    "dataInteracao": "2026-06-15",
+    "destino": "Relatório futuro",
+    "anotacao": "Entender junto a Michele, sobre a qualificação das visitas dos gerentes após a implantação da CRN.",
+    "arquivos": [],
+    "createdAt": "2026-06-15T14:25:58.559Z",
+    "updatedAt": "2026-06-15T14:26:45.764Z"
+  }
+]

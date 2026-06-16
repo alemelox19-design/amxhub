@@ -1,0 +1,230 @@
+[
+  {
+    "id": "uniao-central",
+    "nome": "Sicoob União Central",
+    "sistema": "Crediminas",
+    "produtos": [
+      "Central 1.0"
+    ],
+    "dataInicio": "2025-10-01",
+    "evolucao": 80,
+    "status": "Ativo",
+    "presidente": "",
+    "diretor": "Edson ",
+    "gestor": "Marcelo ",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Uniao-Central"
+  },
+  {
+    "id": "credinova",
+    "nome": "Sicoob Credinova",
+    "sistema": "Cecremg",
+    "produtos": [
+      "Digital Coop"
+    ],
+    "dataInicio": "2025-10-01",
+    "evolucao": 90,
+    "status": "Ativo",
+    "presidente": "",
+    "diretor": "Eliamar ",
+    "gestor": "Henrique",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Credinova"
+  },
+  {
+    "id": "credivar",
+    "nome": "Sicoob Credivar",
+    "sistema": "Crediminas",
+    "produtos": [
+      "Central 2.0"
+    ],
+    "dataInicio": "",
+    "evolucao": 75,
+    "status": "Ativo",
+    "presidente": "",
+    "diretor": "Mateus ",
+    "gestor": "Andrielly",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Credivar"
+  },
+  {
+    "id": "credivass",
+    "nome": "Sicoob Credivass",
+    "sistema": "Crediminas",
+    "produtos": [
+      "Central 2.0"
+    ],
+    "dataInicio": "2026-05-01",
+    "evolucao": 20,
+    "status": "Em implantação",
+    "presidente": "",
+    "diretor": "Rodolfo ",
+    "gestor": "Thais ",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Credivass"
+  },
+  {
+    "id": "crediesmeraldas",
+    "nome": "Sicoob Crediesmeraldas",
+    "sistema": "Crediminas",
+    "produtos": [
+      "Digital Coop"
+    ],
+    "dataInicio": "2025-10-15",
+    "evolucao": 40,
+    "status": "Em implantação",
+    "presidente": "Rogerio ",
+    "diretor": "Adilson",
+    "gestor": "Andreia ",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Crediesmeraldas"
+  },
+  {
+    "id": "crediplus",
+    "nome": "Sicoob Crediplus",
+    "sistema": "Crediminas",
+    "produtos": [
+      "Central 1.0"
+    ],
+    "dataInicio": "",
+    "evolucao": 100,
+    "status": "Concluído",
+    "presidente": "",
+    "diretor": "Nathan",
+    "gestor": "Everton ",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Crediplus"
+  },
+  {
+    "id": "credicope",
+    "nome": "Sicoob Credicope",
+    "sistema": "Crediminas",
+    "produtos": [
+      "Central 2.0"
+    ],
+    "dataInicio": "2026-05-01",
+    "evolucao": 30,
+    "status": "Em implantação",
+    "presidente": "",
+    "diretor": "",
+    "gestor": "Claudio",
+    "rh": "Loren",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Credicope"
+  },
+  {
+    "id": "saron",
+    "nome": "Sicoob Saron",
+    "sistema": "Cecremg",
+    "produtos": [
+      "Digital Coop"
+    ],
+    "dataInicio": "",
+    "evolucao": 0,
+    "status": "Atenção",
+    "presidente": "",
+    "diretor": "",
+    "gestor": "",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Saron"
+  },
+  {
+    "id": "credicapi",
+    "nome": "Sicoob Credicapi",
+    "sistema": "Cecremg",
+    "produtos": [
+      "Digital Coop"
+    ],
+    "dataInicio": "",
+    "evolucao": 0,
+    "status": "Atenção",
+    "presidente": "",
+    "diretor": "",
+    "gestor": "",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Credicapi"
+  },
+  {
+    "id": "uniao-centro-oeste",
+    "nome": "Sicoob União Centro Oeste",
+    "sistema": "Cecremg",
+    "produtos": [
+      "Digital Coop"
+    ],
+    "dataInicio": "",
+    "evolucao": 0,
+    "status": "Atenção",
+    "presidente": "",
+    "diretor": "",
+    "gestor": "",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Uniao-Centro-Oeste"
+  },
+  {
+    "id": "credifiemg",
+    "nome": "Sicoob Credifiemg",
+    "sistema": "Crediminas",
+    "produtos": [
+      "Digital Coop"
+    ],
+    "dataInicio": "2026-05-01",
+    "evolucao": 40,
+    "status": "Em implantação",
+    "presidente": "",
+    "diretor": "Marcio ",
+    "gestor": "Michele",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "",
+    "agentKey": "Credifiemg"
+  },
+  {
+    "id": "credifor",
+    "nome": "Sicoob Credifor",
+    "sistema": "Crediminas",
+    "produtos": [
+      "Central 2.0"
+    ],
+    "dataInicio": "2026-05-01",
+    "evolucao": 58,
+    "status": "Em implantação",
+    "presidente": "",
+    "diretor": "Felipe",
+    "gestor": "Meyre",
+    "rh": "",
+    "ti": "",
+    "marketing": "",
+    "observacoes": "Importada do projeto ChatGPT ANALISTA AMX em 15/06/2026.",
+    "agentKey": "Credifor"
+  }
+]

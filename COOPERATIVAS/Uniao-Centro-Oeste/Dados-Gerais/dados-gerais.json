@@ -1,0 +1,19 @@
+{
+  "id": "uniao-centro-oeste",
+  "nome": "Sicoob União Centro Oeste",
+  "sistema": "Cecremg",
+  "produtos": [
+    "Digital Coop"
+  ],
+  "dataInicio": "",
+  "evolucao": 0,
+  "status": "Atenção",
+  "presidente": "",
+  "diretor": "",
+  "gestor": "",
+  "rh": "",
+  "ti": "",
+  "marketing": "",
+  "observacoes": "",
+  "agentKey": "Uniao-Centro-Oeste"
+}
