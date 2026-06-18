@@ -81,6 +81,6 @@ Workspace integrado - 18/06/2026
 Correcao Workspace - 18/06/2026
 - ChatGPT, E-mail Hostinger e Google Agenda bloqueiam incorporacao direta em
   iframe por politica propria de seguranca.
-- Para estes servicos, a Workspace agora mostra um painel AMX de acesso
-  protegido, sem tela 403, com botao para abrir em janela segura do navegador.
+- Para evitar tela 403 ou painel intermediario, estes servicos passam a abrir
+  diretamente em nova aba segura do navegador.
 - Bureau Coop continua abrindo incorporado, pois permite esse formato.
