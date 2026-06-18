@@ -1,0 +1,30 @@
+AMX HUB 9.0.4 STABLE
+Impacto documentado - 18/06/2026
+
+Objetivo
+- Reduzir risco de perda de dados no uso online, inclusive pelo celular.
+- Manter a arquitetura atual, rotas existentes e fluxo do Assistente AMX.
+- Nao adicionar o aviso visual solicitado para nao fazer nesta etapa.
+
+Alteracoes incrementais
+- Adicionado backup automatico em JSON antes de gravacoes nos arquivos centrais:
+  cooperativas, notas, DNA, pendencias, timeline, consumo IA e orcamento.
+- Adicionado endpoint de exportacao manual:
+  GET /api/backup/export
+- Adicionado endpoint de importacao manual:
+  POST /api/backup/import
+- A importacao cria backup automatico antes de substituir os dados atuais.
+- Area Admin ganhou botoes:
+  Gerar Backup Completo, Exportar Dados e Importar Dados.
+
+Compatibilidade
+- Estruturas JSON atuais foram preservadas.
+- Backup ZIP existente em /api/backup foi mantido.
+- APIs existentes nao foram removidas.
+- Layout estrutural do AMX HUB foi preservado.
+- Assistente AMX e fluxo OpenAI nao foram alterados.
+
+Risco residual
+- No Render Free, o armazenamento do servidor ainda pode ser temporario.
+- A mitigacao desta versao e permitir exportar/importar dados e manter snapshots
+  automaticos antes de alteracoes.

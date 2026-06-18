@@ -16,7 +16,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const app = express();
 const port = process.env.PORT || 3000;
-const version = "9.0.3";
+const version = "9.0.4";
 const key = process.env.OPENAI_API_KEY || "";
 const client = new OpenAI({ apiKey: key });
 const dataRoot = process.env.AMX_DATA_DIR ? path.resolve(process.env.AMX_DATA_DIR) : __dirname;
@@ -26,9 +26,16 @@ seedDataRoot();
 app.use(express.json({ limit: "20mb" }));
 const upload = multer({ dest: abs("uploads"), limits: { fileSize: 25 * 1024 * 1024 } });
 const P = { coops:"data/cooperativas.json", notas:"data/notas.json", dna:"data/dna.json", pend:"data/pendencias.json", timeline:"data/timeline.json", usage:"logs/ai-usage.json", budget:"config/budget.json" };
+const dataKeys = { cooperativas:P.coops, notas:P.notas, dna:P.dna, pendencias:P.pend, timeline:P.timeline, usage:P.usage, budget:P.budget };
 const levels = { economica:{label:"Econômica",model:"gpt-4.1-mini",i:.4,o:1.6}, intermediaria:{label:"Intermediária",model:"gpt-4.1",i:2,o:8}, avancada:{label:"Avançada",model:"gpt-4.1",i:2,o:8}, maximo:{label:"Máximo",model:"gpt-4.1",i:2,o:8} };
 function rj(p,d){try{return fs.existsSync(abs(p))?JSON.parse(fs.readFileSync(abs(p),"utf-8")||JSON.stringify(d)):d}catch{return d}}
-function wj(p,d){fs.mkdirSync(path.dirname(abs(p)),{recursive:true});fs.writeFileSync(abs(p),JSON.stringify(d,null,2),"utf-8")}
+let suppressDataBackup=false;
+function wj(p,d){if(!suppressDataBackup&&Object.values(dataKeys).includes(p))autoBackup("antes-"+path.basename(p,".json"));fs.mkdirSync(path.dirname(abs(p)),{recursive:true});fs.writeFileSync(abs(p),JSON.stringify(d,null,2),"utf-8")}
+function stamp(){return new Date().toISOString().replace(/[:.]/g,"-").slice(0,19)}
+function dataSnapshot(reason="manual"){const data={}; for(const [k,p] of Object.entries(dataKeys))data[k]=rj(p,k==="dna"||k==="budget"?{}:[]); return {app:"AMX HUB",version,createdAt:new Date().toISOString(),reason,data}}
+function writeSnapshot(reason){const out=abs(`BACKUPS/dados-amx-hub-${stamp()}-${safe(reason)}.json`); fs.mkdirSync(path.dirname(out),{recursive:true}); fs.writeFileSync(out,JSON.stringify(dataSnapshot(reason),null,2),"utf-8"); return out}
+function autoBackup(reason){try{return path.relative(dataRoot,writeSnapshot(reason))}catch(e){console.error("Falha no backup automatico:",e.message); return null}}
+function restoreSnapshot(payload){const src=payload?.data?payload.data:payload; if(!src||typeof src!=="object")throw new Error("Arquivo de backup invalido."); autoBackup("antes-importar-dados"); suppressDataBackup=true; try{for(const [k,p] of Object.entries(dataKeys)){if(Object.prototype.hasOwnProperty.call(src,k))wj(p,src[k])}}finally{suppressDataBackup=false} rj(P.coops,[]).forEach(ensureCoop); return {ok:true,summary:summary()}}
 function safe(s){return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-zA-Z0-9._ -]/g,"").trim()}
 function slug(s){return safe(s).toLowerCase().replace(/\s+/g,"-")}
 function agentFrom(nome){return safe(String(nome||"").replace(/^Sicoob\s+/i,"")).replace(/\s+/g,"-")}
@@ -89,6 +96,8 @@ app.put("/api/pendencias/:id",(req,res)=>{const all=rj(P.pend,[]),i=all.findInde
 app.delete("/api/pendencias/:id",(req,res)=>{wj(P.pend,rj(P.pend,[]).filter(p=>p.id!==req.params.id));res.json({ok:true})});
 app.get("/api/timeline",(req,res)=>{const a=req.query.agentKey,all=rj(P.timeline,[]);res.json({timeline:(a?all.filter(t=>t.agentKey===a):all).slice().reverse()})});
 app.post("/api/generate-from-note",(req,res)=>{const n=rj(P.notas,[]).find(x=>x.id===req.body.noteId); if(!n)return res.status(404).json({error:"Nota não encontrada."}); const tipo=req.body.tipo||n.destino||"Relatório",prompt=`Com base na anotação abaixo, gere um ${tipo} no padrão AMX Coop.\n\nCOOPERATIVA: ${n.cooperativaNome}\nDATA: ${n.dataInteracao}\nANOTAÇÃO:\n${n.anotacao}`; timeline(n.agentKey,n.cooperativaNome,"Geração solicitada",tipo,"Documento solicitado a partir de nota."); res.json({ok:true,prompt,agentKey:n.agentKey})});
+app.get("/api/backup/export",(req,res)=>{const file=`dados-amx-hub-${stamp()}.json`; res.setHeader("Content-Disposition",`attachment; filename="${file}"`); res.type("application/json").send(JSON.stringify(dataSnapshot("exportacao-manual"),null,2))});
+app.post("/api/backup/import",upload.single("backup"),(req,res)=>{try{if(!req.file)return res.status(400).json({error:"Envie um arquivo de backup JSON."}); const payload=JSON.parse(fs.readFileSync(req.file.path,"utf-8")); fs.rmSync(req.file.path,{force:true}); res.json(restoreSnapshot(payload))}catch(e){if(req.file?.path)fs.rmSync(req.file.path,{force:true}); res.status(400).json({error:e.message||"Nao consegui importar o backup."})}});
 app.get("/api/usage",(req,res)=>res.json({logs:rj(P.usage,[]).slice(-100).reverse(),summary:usageSummary()}));
 app.post("/api/backup",(req,res)=>{const stamp=new Date().toISOString().replace(/[:.]/g,"-").slice(0,19),ext=process.platform==="win32"?"zip":"tar.gz",out=abs(`BACKUPS/backup-amx-hub-${stamp}.${ext}`),folders=["data","COOPERATIVAS","BIBLIOTECA-AMX","knowledge","logs","config","uploads"].filter(p=>fs.existsSync(abs(p))); fs.mkdirSync(path.dirname(out),{recursive:true}); const done=err=>err?res.status(500).json({error:"Não consegui gerar o backup automático.",details:err.message}):res.json({ok:true,backup:path.relative(dataRoot,out),download:"/api/backups/"+path.basename(out)}); if(process.platform==="win32"){const paths=folders.map(p=>`"${p.replaceAll('"','""')}"`).join(","),cmd=`Compress-Archive -Path ${paths} -DestinationPath "${out.replaceAll('"','""')}" -Force`; return execFile("powershell.exe",["-NoProfile","-Command",cmd],{cwd:dataRoot},done)} execFile("tar",["-czf",out,...folders],{cwd:dataRoot},done)});
 app.get("/api/backups/:file",(req,res)=>{const file=path.basename(req.params.file),full=abs("BACKUPS/"+file); if(!fs.existsSync(full))return res.status(404).json({error:"Backup não encontrado."}); res.download(full)});

@@ -1,7 +1,7 @@
 {
-  "name": "amx-hub-9-0-3-stable",
-  "version": "9.0.3",
-  "description": "AMX HUB 9.0.3 Stable - Estabilização incremental",
+  "name": "amx-hub-9-0-4-stable",
+  "version": "9.0.4",
+  "description": "AMX HUB 9.0.4 Stable - Protecao incremental de dados",
   "main": "server.js",
   "type": "module",
   "scripts": {
