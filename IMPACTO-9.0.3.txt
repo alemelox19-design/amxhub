@@ -69,3 +69,11 @@ Deploy Render Free - 16/06/2026
 - Variaveis sensiveis ficam marcadas para configuracao manual no Render.
 - Uso recomendado como piloto online, com backups frequentes por nao haver
   garantia de persistencia definitiva no plano gratuito.
+
+Workspace integrado - 18/06/2026
+- ChatGPT adicionado ao Workspace em moldura interna do AMX HUB.
+- E-mail Hostinger adicionado ao Workspace em moldura interna do AMX HUB.
+- Google Agenda passou de link externo para abertura na moldura interna.
+- Bureau Coop foi preservado no mesmo formato ja validado.
+- Incluido botao "Abrir externo" para sites que bloqueiam incorporacao por
+  politica propria de seguranca.
