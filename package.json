@@ -1,7 +1,7 @@
 {
-  "name": "amx-hub-9-0-6-stable",
-  "version": "9.0.6",
-  "description": "AMX HUB 9.0.6 Stable - Protecao local de notas",
+  "name": "amx-hub-9-0-7-stable",
+  "version": "9.0.7",
+  "description": "AMX HUB 9.0.7 Stable - Persistencia Supabase",
   "main": "server.js",
   "type": "module",
   "scripts": {

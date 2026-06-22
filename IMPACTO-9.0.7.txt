@@ -1,0 +1,24 @@
+AMX HUB 9.0.7 STABLE
+Impacto documentado - 22/06/2026
+
+Objetivo
+- Migrar os dados estruturados do AMX HUB para armazenamento persistente no
+  Supabase, removendo a dependencia do disco temporario do Render Free.
+
+Alteracoes incrementais
+- Adicionado adaptador interno para Supabase sem alterar as APIs existentes.
+- Cooperativas, notas, DNA, pendencias, timeline, uso de IA e orcamento sao
+  mantidos como documentos JSON compativeis na tabela amx_hub_store.
+- Na primeira conexao, os dados locais existentes sao enviados ao Supabase.
+- Em configuracao obrigatoria, o HUB nao confirma gravacoes se o Supabase nao
+  responder; isso evita informar salvamento quando a persistencia falhou.
+- Arquivos de notas e anexos continuam locais nesta etapa. O texto e os dados
+  estruturados das notas passam a ter persistencia no banco.
+
+Seguranca
+- SUPABASE_SERVICE_ROLE_KEY deve existir apenas nas variaveis protegidas do
+  Render. Ela nao e enviada ao navegador.
+- A tabela nao concede acesso direto aos papeis anon ou authenticated.
+
+Compatibilidade
+- Formato atual dos JSONs, APIs, layout e Assistente AMX foram preservados.
