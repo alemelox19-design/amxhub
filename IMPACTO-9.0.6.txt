@@ -1,0 +1,21 @@
+AMX HUB 9.0.6 STABLE
+Impacto documentado - 22/06/2026
+
+Problema corrigido
+- O Render Free pode recriar a instancia e apagar arquivos gravados no disco
+  temporario, inclusive notas salvas anteriormente.
+
+Protecao imediata adicionada
+- Rascunhos do Bloco de Notas sao gravados no armazenamento local do navegador
+  a cada digitacao.
+- Toda nota e copiada para uma fila local antes de ser enviada ao servidor.
+- Ao abrir o HUB e a cada cinco minutos, notas ausentes no servidor sao
+  reenviadas automaticamente a partir da copia local.
+- Se o servidor falhar, a tela informa que o texto ficou salvo no dispositivo.
+
+Limite conhecido
+- Esta protecao garante recuperacao no mesmo celular ou computador enquanto os
+  dados do navegador nao forem apagados.
+- Para garantia permanente entre dispositivos, a proxima etapa obrigatoria e
+  migrar os dados para um banco persistente externo. O disco do Render Free nao
+  oferece essa garantia.
