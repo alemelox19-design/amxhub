@@ -16,9 +16,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const app = express();
 const port = process.env.PORT || 3000;
-const version = "9.0.4";
+const version = "9.0.5";
 const key = process.env.OPENAI_API_KEY || "";
-const client = new OpenAI({ apiKey: key });
+const client = new OpenAI({ apiKey: key, timeout: Number(process.env.AMX_CHAT_TIMEOUT_MS || 120000), maxRetries: 0 });
 const dataRoot = process.env.AMX_DATA_DIR ? path.resolve(process.env.AMX_DATA_DIR) : __dirname;
 const abs = p => path.join(dataRoot,p);
 function seedDataRoot(){if(dataRoot===__dirname)return; fs.mkdirSync(dataRoot,{recursive:true}); for(const item of ["data","COOPERATIVAS","BIBLIOTECA-AMX","knowledge","logs","config","uploads"]){const src=path.join(__dirname,item),dest=abs(item); if(fs.existsSync(src)&&!fs.existsSync(dest))fs.cpSync(src,dest,{recursive:true})} for(const item of ["data","COOPERATIVAS","knowledge","logs","config","uploads"])fs.mkdirSync(abs(item),{recursive:true})}

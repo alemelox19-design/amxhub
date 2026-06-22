@@ -1,0 +1,21 @@
+AMX HUB 9.0.5 STABLE
+Impacto documentado - 22/06/2026
+
+Objetivo
+- Corrigir falta de retorno visual em geracoes do Assistente AMX e no salvamento
+  do Bloco de Notas.
+
+Alteracoes incrementais
+- Cliente OpenAI recebeu prazo maximo de 120 segundos e nao repete chamadas
+  automaticamente em caso de falha.
+- Navegador passou a ter prazo maximo para requisicoes: 150 segundos para IA e
+  90 segundos para notas.
+- Assistente informa quando a geracao demora e exibe erro compreensivel quando
+  o servidor nao responde.
+- Bloco de Notas agora informa "Salvando...", confirma o sucesso, atualiza a
+  lista e informa o motivo quando nao consegue salvar.
+
+Compatibilidade
+- Estruturas de dados, APIs existentes, Assistente AMX e fluxo OpenAI foram
+  preservados.
+- Nenhuma funcionalidade validada foi removida.
